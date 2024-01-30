@@ -3,7 +3,7 @@ import {createDriverStandingsPage} from `${baseURL}/driverstandings/driverStandi
 import {createConstructorsStandingsPage} from `${baseURL}/constructorStandings/constructorStandings.js`;
 import {createResultsPage } from `${baseURL}/raceResults/raceResults.js`;
 import {createSchedulePage } from `${baseURL}/raceSchedule/raceSchedule.js`;
-import {createHomePage } from `${baseURL}/homePage.js`;
+import {createHomePage } from `${baseURL}/F1Page/homePage.js`;
 
 
 // abstracted function
