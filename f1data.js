@@ -3,7 +3,7 @@ import {createDriverStandingsPage} from `${baseURL}/driverstandings/driverStandi
 import {createConstructorsStandingsPage} from `${baseURL}/constructorStandings/constructorStandings.js`;
 import {createResultsPage } from `${baseURL}/raceResults/raceResults.js`;
 import {createSchedulePage } from `${baseURL}/raceSchedule/raceSchedule.js`;
-import {createHomePage } from `${baseURL}/F1Page/homePage.js`;
+import {createHomePage } from `${baseURL}/homePage.js`;
 
 
 // abstracted function
@@ -87,9 +87,11 @@ document.addEventListener('DOMContentLoaded', async function (){
     if (currentPage === 'constructorsStandingPage') {
         await createConstructorsStandingsPage();
     }
+
+    if (currentPage === 'homePage') {
+    createHomePage();
+    }
 });
 
-if (currentPage === 'homePage') {
-    createHomePage();
-}
+
 
