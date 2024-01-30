@@ -1,0 +1,69 @@
+/* Container for content */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto:wght@100&family=Titillium+Web&display=swap');
+*{
+  font-family: 'Poppins', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  font-family: 'Titillium Web', sans-serif;
+}
+body {
+  background-image: url('./Logo&Background/f1testbackground-5R7t-IoJD-transformed.webp');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#raceList {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap; /* Allow multiple rows */
+    justify-content: space-between; /* Distribute items evenly */
+}
+  
+  /* Styling for each race card */
+.raceScheduleCard {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Align items to the start (left) */
+  padding: 10px; /* Add padding for better spacing */
+  width: 49%; /* Adjust as needed for spacing between cards */
+  padding: 15px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  border: 1px solid #ddd; /* Border color */
+  border-radius: 8px; /* Rounded corners */
+  background-color: #333333cf;
+  transition: transform 0.5s ease;
+}
+.raceScheduleCard:hover {
+  transform: scale(1.05);
+}
+  
+  /* Race name styling */
+h1 {
+  font-size: 20px;
+  margin-bottom: 5px;
+  color: white;
+}
+  
+  /* Round number styling */
+p {
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.725);
+  margin-bottom: 15px;
+}
+  
+  /* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .raceCard {
+    width: 100%; /* Full width on smaller screens */
+  }
+  
+  h1, p {
+    font-size: 16px;
+  }
+}
+
+img {
+    margin-left: auto;
+    width: 20%;
+}

@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto:wght@100&family=Titillium+Web&display=swap');
+*{
+  font-family: 'Poppins', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  font-family: 'Titillium Web', sans-serif;
+}
+body {
+  background-image: url('./Logo&Background/f1testbackground-5R7t-IoJD-transformed.webp');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#loadingScreen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('./Logo&Background/f1testbackground-5R7t-IoJD-transformed.webp');
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000; /* Ensure it's above other elements */
+}
+
+.revMeter {
+  width: 100px;
+  height: 100px;
+  animation: revMeterSpin 1s linear infinite;
+}
+
+@keyframes revMeterSpin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+#titleContainer {
+  background-color:#333333f2; /* Light background color */
+  border: 1px solid #ccc; /* Border color */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Box shadow for a subtle lift */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+#pageTitle {
+  text-align: center;
+}
+#resultList {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: wrap row; /* Allow multiple rows */
+    justify-content: space-between; /* Distribute items evenly */
+  }
+
+.driverResultsWithNames {
+    max-height: 700px;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 1.2s, opacity 1.2s;
+}
+
+.raceResultsCard:hover .driverResultsWithNames {
+  display: block;
+  opacity: 1;
+  color: white; 
+  font-size: 16px; 
+  margin: 5px 0; 
+  text-align: right; 
+
+
+}
+.raceResultsCard {
+  display: flex; /* Use flexbox for layout */
+  flex-direction: column;
+  background-color:#333333cf; /* Light background color */
+  border: 1px solid #ccc; /* Border color */
+  padding: 30px; /* Padding around the card */
+  margin: 30px 0; /* Margin between cards */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Box shadow for a subtle lift */
+  width: 20%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  height: 50px;
+  transition: height 1.2s;
+}
+
+.raceResultsCard:hover{
+  height: 700px;
+
+}
+
+  
+h1 {
+
+    flex: 1; /* Take up remaining space on the left */
+    color: white; /* Text color for the race name */
+    font-size: 20px; /* Font size for the race name */
+    margin-right: 20px; /* Margin to separate from the column on the right */
+
+  }
+
+  div {
+    color: white;
+  }
+  
+  
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .raceResultsCard {
+      width: 100%; /* Full width on smaller screens */
+      margin: 15px 0; /* Adjust margin for better spacing */
+  }
+
+  h1 {
+      font-size: 18px; /* Adjust font size for race name */
+      margin-right: 10px; /* Adjust margin for better spacing */
+  }
+
+  .flagsForCircuitNames {
+      max-height: 50px; /* Set a specific maximum height for the flag images on smaller screens */
+      width: auto; /* Allow the width to adjust proportionally */
+      margin-left: auto; /* Align the flags to the right */
+      display: block; /* Ensure the flags are displayed as block elements */
+  }
+
+  .pageOpener {
+      width: 100%; /* Make page opener full width on smaller screens */
+      height: auto; /* Adjust height to fit content */
+  }
+}
+
+
+.flagsForCircuitNames {
+  margin-left: auto;
+  width: 20%;
+}
+
+.pageOpener {
+  width: fit-content;
+  height: 600px;
+}
+
+

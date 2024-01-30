@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="f1homepage.css">
+    <script defer type="module" src="f1data.js"></script>
+    <title>Home</title>
+</head>
+<body>
+    <script>
+        var currentPage = 'homePage';
+    </script>
+<!-- need navbar and image -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-transparent ">
+    <img src="./Logo&Background/f1logobackgroundremoved.png" alt="logo" id="logo">
+    <div class="container-fluid headliner" >
+      <a class="navbar-brand logoheadliner">F1 2023</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav justify-content-around">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="raceShedule.html" target="_blank">RACE SCHEDULE</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="raceResults.html" target="_blank">RACE RESULTS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="driverStandings.html" target="_blank">DRIVER'S CHAMPIONSHIP</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="constructorStandings.html" target="_blank">CONSTRUCTOR'S CHAMPIONSHIP</a>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="d-flex justify-content-center bg-transparent">
+    <div class="text-center" id="countdownTimer">
+        <div>2024 SEASON BEGINNING</div>
+        <div class="countdown">
+            <span id="days"></span> : 
+            <span id="hours"></span> : 
+            <span id="minutes"></span> : 
+            <span id="seconds"></span> 
+        </div>
+    </div>
+</div>
+<div class="container-fluid">
+    <div class="row">
+      <div class="col-6 offset-3">
+        <h2 class="d-flex justify-content-center highlightBar">2023 HIGHLIGHTS</h2>
+      <div>
+    <div>
+<div>
+<div class="buttonContainer text-center">
+  <a href="https://www.youtube.com/watch?v=Wg4YfEXK8R8&list=PLj7RD7nCnlE2xO-nYnz2ccpLoADHSpjiz&index=1" target="_blank" class="buttons">QUALIFYING & RACE HIGHLIGHTS</a>
+  <a href="https://www.youtube.com/watch?v=fwI_ZN396v8&pp=ygUZZjEgMjAyMyBzZWFzb24gaGlnaGxpZ2h0cw%3D%3D" target="_blank" class="buttons">VERSTAPPEN RECORD BREAKING MOMENTS</a>
+  <a href="https://www.youtube.com/watch?v=fl9EkfkfjaU" target="_blank" class="buttons">BEST TEAM RADIO MOMENTS</a>
+  <a href="https://www.youtube.com/watch?v=IMLmdpVdNnU&pp=ygUhZjEgMjAyMyBzZWFzb24gaGlnaGxpZ2h0cyBjcmFzaGVz" target="_blank" class="buttons">TOP 10 BIGGEST CRASHES</a>
+  <a href="https://www.youtube.com/watch?v=fvCrRY3edOI&pp=ygUZZjEgMjAyMyBzZWFzb24gaGlnaGxpZ2h0cw%3D%3D" target="_blank" class="buttons">SEASON MONTAGE</a>
+  <a href="https://www.youtube.com/watch?v=o5aWDx8K49Y" target="_blank" class="buttons">POST-SEASON TESTING</a>
+</div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto:wght@100&family=Titillium+Web:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto:wght@100&family=Titillium+Web:ital@1&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+
+body {
+    background-image: url('./Logo&Background/f1testbackground-5R7t-IoJD-transformed.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#logo {
+    width: 10%;
+
+}
+.navbar-nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.headliner {
+    /* background-color: rgba(105, 80, 80, 0.237); */
+    background-color:#333333cf;
+    border-radius: 20px;
+    font-weight: bolder;
+
+}
+.logoheadliner {
+    padding-right: 10%;
+    border-right: 2px solid rgba(255, 255, 255, 0.389);
+}
+
+#countdownTimer {
+    font-size: 300%; /* Example font size, adjust as needed */
+    color: white;
+    /* background-color: rgba(105, 80, 80, 0.481); */
+    background-color:#333333e4;
+    border-radius: 20px;
+    padding: 20px;
+    margin-top: 20px; /* Spacing from the navbar */
+    transition: transform 0.5s ease;
+}
+#countdownTimer:hover {
+    transform: scale(1.1);
+}
+
+.countdown {
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Titillium Web', sans-serif;
+    display: inline-block;
+    padding: 10px;
+}
+
+h2 {
+    font-size: 300%; /* Example font size, adjust as needed */
+    color: white;
+    /* background-color: rgba(105, 80, 80, 0.481); */
+    background-color:#333333e4;
+    border-radius: 20px;
+    padding: 20px;
+    margin-top: 20px; /* Spacing from the navbar */
+}
+
+/* Add this CSS for the buttons */
+.buttonContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.buttons {
+    text-decoration: none;
+    color: white;
+    background-color: #333333e4;
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 20px 20px;
+    margin: 10px 10px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    width: 45%;
+}
+a {
+    border-radius: 10px;
+}
+
+a:hover {
+    background-color: #555555;
+
+}
+/* Media query for smaller screens */
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .navbar-nav {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+    }
+
+    .logoheadliner {
+        padding-right: 0;
+        border-right: none;
+    }
+
+    h2 {
+        width: 100%; /* Make h2 full width on smaller screens */
+        text-align: center; /* Center the text horizontally */
+        margin: 20px 0; /* Adjust margin for better spacing */
+        font-size: 150%;
+    }
+
+    .buttonContainer {
+        flex-direction: column; /* Stack buttons vertically on smaller screens */
+        align-items: center; /* Center buttons horizontally */
+    }
+
+    .buttons {
+        width: 100%; /* Make buttons full width on smaller screens */
+        margin: 10px 0; /* Adjust margin for better spacing */
+    }
+}
