@@ -1,4 +1,5 @@
-import { getConstructorData } from "../f1data.js"
+var baseURL = window.location.pathname
+import { getConstructorData } from `${baseURL}/f1data.js`
 
 const constructorStandingsList = document.querySelector('#constructorStandingsList')
 // abstracted function
@@ -40,7 +41,7 @@ export async function createConstructorsStandingsPage() {
         
         const constructorImgAppended = document.createElement('img')
 
-        constructorImgAppended.src = `./constructorStandings/${Name}.avif` 
+        constructorImgAppended.src = `${baseURL}/constructorStandings/${Name}.avif` 
 
 
         constructorImgAppended.classList.add('raceConstructorStandingsCardImg')

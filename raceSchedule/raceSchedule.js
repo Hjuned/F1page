@@ -1,3 +1,4 @@
+var baseURL = window.location.pathname
 const raceList = document.querySelector('#raceList');
 // abstracted function
 async function fetchData(url){
@@ -43,7 +44,7 @@ export async function createSchedulePage() {
                 raceScheduleCard.appendChild(circuitDateElement)
                 raceList.appendChild(raceScheduleCard)
                 const circuitImagesAppended = document.createElement('img')
-                circuitImagesAppended.src = `./raceSchedule/${raceName.split(' ')[0]}.jpeg`  // Adjust index to start from 0
+                circuitImagesAppended.src = `${baseURL}/raceSchedule/${raceName.split(' ')[0]}.jpeg`  // Adjust index to start from 0
                 circuitImagesAppended.classList.add('raceScheuleCardImg')
                 raceScheduleCard.appendChild(circuitImagesAppended)
                 

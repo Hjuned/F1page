@@ -1,4 +1,5 @@
-import { createRoundRaceResult } from "../f1data.js";
+var baseURL = window.location.pathname
+import { createRoundRaceResult } from `${baseURL}/f1data.js`;
 
 // Appending results to page by looping through earlier created list for all race names, giving all results for corresponding race using another loop within
 export async function createResultsPage() {
@@ -14,7 +15,7 @@ export async function createResultsPage() {
         const flagsForCircuitNames = document.createElement('img')
         // trackNames.classList.add('raceNamesHover');
         trackNames.textContent = `${allResultsForResultsPage[i][0]}` // [name,[positions * 20]] -> name
-        flagsForCircuitNames.src= `./raceResults/${allResultsForResultsPage[i][0].split(' ')[0]}.jpeg`
+        flagsForCircuitNames.src= `${baseURL}/raceResults/${allResultsForResultsPage[i][0].split(' ')[0]}.jpeg`
         flagsForCircuitNames.classList.add('flagsForCircuitNames')
     
         // console.log(allResultsForResultsPage[i][0])

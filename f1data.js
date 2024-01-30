@@ -1,8 +1,10 @@
-import {createDriverStandingsPage} from './driverstandings/driverStandings.js'
-import {createConstructorsStandingsPage} from './constructorStandings/constructorStandings.js';
-import {createResultsPage } from './raceResults/raceResults.js';
-import {createSchedulePage } from './raceSchedule/raceSchedule.js';
-import {createHomePage } from './homePage.js';
+var baseURL = window.location.pathname
+import {createDriverStandingsPage} from `${baseURL}/driverstandings/driverStandings.js`
+import {createConstructorsStandingsPage} from `${baseURL}/constructorStandings/constructorStandings.js`;
+import {createResultsPage } from `${baseURL}/raceResults/raceResults.js`;
+import {createSchedulePage } from `${baseURL}/raceSchedule/raceSchedule.js`;
+import {createHomePage } from `${baseURL}/homePage.js`;
+
 
 // abstracted function
 export async function fetchData(url){
