@@ -1,9 +1,8 @@
-var baseURL = window.location.pathname
-import {createDriverStandingsPage} from 'F1page/driverstandings/driverStandings.js'
-import {createConstructorsStandingsPage} from 'F1page/constructorStandings/constructorStandings.js';
-import {createResultsPage } from 'F1page/raceResults/raceResults.js';
-import {createSchedulePage } from 'F1Page/raceSchedule/raceSchedule.js';
-import {createHomePage } from 'F1page/homePage.js';
+import {createDriverStandingsPage} from '/F1page/driverstandings/driverStandings.js'
+import {createConstructorsStandingsPage} from '/F1page/constructorStandings/constructorStandings.js';
+import {createResultsPage } from '/F1page/raceResults/raceResults.js';
+import {createSchedulePage } from '/F1Page/raceSchedule/raceSchedule.js';
+import {createHomePage } from '/F1page/homePage.js';
 
 
 
