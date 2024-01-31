@@ -39,10 +39,7 @@ export async function createConstructorsStandingsPage() {
         raceConstructorStandingsCard.append(constructorLeaderboardWins)
         
         const constructorImgAppended = document.createElement('img')
-
         constructorImgAppended.src = `./constructorStandings/${Name}.avif` 
-
-
         constructorImgAppended.classList.add('raceConstructorStandingsCardImg')
         raceConstructorStandingsCard.append(constructorImgAppended)
         constructorStandingsList.append(raceConstructorStandingsCard)
