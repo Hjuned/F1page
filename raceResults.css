@@ -20,7 +20,7 @@ body {
 #pageTitle {
   text-align: center;
 }
-#loadingScreen {
+#loadingScreen img{
   z-index: 10000;
 }
 #resultList {
