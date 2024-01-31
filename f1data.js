@@ -68,7 +68,9 @@ export async function getConstructorData() {
 
 document.addEventListener('DOMContentLoaded', async function (){
     if (currentPage === 'schedulePage') {
+        document.getElementById('loadingScreen').style.display = 'flex';
         await createSchedulePage();
+        document.getElementById('loadingScreen').style.display = 'none';
     }
 
     if (currentPage === 'resultsPage') {
@@ -78,11 +80,15 @@ document.addEventListener('DOMContentLoaded', async function (){
     }
  
     if (currentPage === 'driverStandingsPage') {
+        document.getElementById('loadingScreen').style.display = 'flex';
         await createDriverStandingsPage();
+        document.getElementById('loadingScreen').style.display = 'none';
     }
 
     if (currentPage === 'constructorsStandingPage') {
+        document.getElementById('loadingScreen').style.display = 'flex';
         await createConstructorsStandingsPage();
+        document.getElementById('loadingScreen').style.display = 'none';
     }
 });
 
