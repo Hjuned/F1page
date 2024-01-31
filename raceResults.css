@@ -20,6 +20,9 @@ body {
 #pageTitle {
   text-align: center;
 }
+#loadingScreen {
+  z-index: 10000;
+}
 #resultList {
     max-width: 1200px;
     margin: 0 auto;
