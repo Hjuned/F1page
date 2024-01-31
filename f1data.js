@@ -1,10 +1,8 @@
-import {createDriverStandingsPage} from '/F1page/driverstandings/driverStandings.js'
-import {createConstructorsStandingsPage} from '/F1page/constructorStandings/constructorStandings.js';
-import {createResultsPage } from '/F1page/raceResults/raceResults.js';
-import {createSchedulePage } from '/F1Page/raceSchedule/raceSchedule.js';
-import {createHomePage } from '/F1page/homePage.js';
-
-
+import {createDriverStandingsPage} from './driverstandings/driverStandings.js'
+import {createConstructorsStandingsPage} from './constructorStandings/constructorStandings.js';
+import {createResultsPage } from './raceResults/raceResults.js';
+import {createSchedulePage } from './raceSchedule/raceSchedule.js';
+import {createHomePage } from './homePage.js';
 
 // abstracted function
 export async function fetchData(url){
@@ -87,11 +85,9 @@ document.addEventListener('DOMContentLoaded', async function (){
     if (currentPage === 'constructorsStandingPage') {
         await createConstructorsStandingsPage();
     }
-
-    if (currentPage === 'homePage') {
-    createHomePage();
-    }
 });
 
-
+if (currentPage === 'homePage') {
+    createHomePage();
+}
 

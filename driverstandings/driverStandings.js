@@ -1,6 +1,4 @@
 const driverStandingsList = document.querySelector('#driverStandingsList')
-
-var baseURL = window.location.pathname
 // abstracted function
 async function fetchData(url){
     const response = await fetch(url)
@@ -43,7 +41,7 @@ export async function createDriverStandingsPage() {
         raceDriverStandingsCard.append(driverLeaderboardWins)
 
         const driverImgAppended = document.createElement('img')
-        driverImgAppended.src = `/f1page/driverStandings/${Name.split(' ')[0]}.avif` 
+        driverImgAppended.src = `./driverStandings/${Name.split(' ')[0]}.avif` 
         driverImgAppended.classList.add('raceScheuleCardImg')
         raceDriverStandingsCard.appendChild(driverImgAppended)
         driverStandingsList.append(raceDriverStandingsCard)
