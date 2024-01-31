@@ -69,7 +69,6 @@ export async function getConstructorData() {
 document.addEventListener('DOMContentLoaded', async function (){
     if (currentPage === 'schedulePage') {
         await createSchedulePage();
-        // for (let {circuitName} of schedule.MRData.RaceTable.Races[0].Circuit.Location.circuitName)
     }
 
     if (currentPage === 'resultsPage') {
