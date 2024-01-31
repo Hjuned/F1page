@@ -41,7 +41,7 @@ export async function createDriverStandingsPage() {
         raceDriverStandingsCard.append(driverLeaderboardWins)
 
         const driverImgAppended = document.createElement('img')
-        driverImgAppended.src = `./driverStandings/${Name.split(' ')[0]}.avif` 
+        driverImgAppended.src = `./driverStandings/${Name.split(' ')[0]}.jpeg` 
         driverImgAppended.classList.add('raceScheuleCardImg')
         raceDriverStandingsCard.appendChild(driverImgAppended)
         driverStandingsList.append(raceDriverStandingsCard)
