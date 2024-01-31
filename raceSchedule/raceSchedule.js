@@ -8,7 +8,7 @@ async function fetchData(url){
 
 // API for Race Schedule
 async function getScheduleData() {
-    return await fetchData('http://ergast.com/api/f1/current.json')
+    return await fetchData('https://ergast.com/api/f1/current.json')
 }
 
 // function that appends schedule info by looping through api to retrieve round, race names, circuit names and dates 

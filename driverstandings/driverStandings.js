@@ -7,7 +7,7 @@ async function fetchData(url){
 }
 //API for driver standings
 async function getDriverData() {
-    return await fetchData('http://ergast.com/api/f1/2023/driverStandings.json')
+    return await fetchData('https://ergast.com/api/f1/2023/driverStandings.json')
 }
 
 // function that appends driver standings information by looping through api to retrieve driver names, positions in standings, points and wins. Driver images also appended through manually created list

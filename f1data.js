@@ -13,13 +13,13 @@ export async function fetchData(url){
 
 // API for Race Schedule
 export async function getScheduleData() {
-        return await fetchData('http://ergast.com/api/f1/current.json');
+        return await fetchData('https://ergast.com/api/f1/current.json');
 }
 
 export async function getResultData() {
     let resultList = [];
     for (let i=1; i<23; i++) {
-        const response = await fetch(`http://ergast.com/api/f1/2023/${i}/results.json`);
+        const response = await fetch(`https://ergast.com/api/f1/2023/${i}/results.json`);
         const results = await response.json();
         resultList.push(results.MRData.RaceTable.Races[0].Results);
     }
@@ -58,12 +58,12 @@ export async function createRoundRaceResult() {
 
 //API for driver standings
 export async function getDriverData() {
-    return await fetchData('http://ergast.com/api/f1/2023/driverStandings.json');
+    return await fetchData('https://ergast.com/api/f1/2023/driverStandings.json');
 }
 
 //API for constructor standings
 export async function getConstructorData() {
-    return await fetchData('http://ergast.com/api/f1/2023/constructorStandings.json');
+    return await fetchData('https://ergast.com/api/f1/2023/constructorStandings.json');
 }
 
 document.addEventListener('DOMContentLoaded', async function (){
