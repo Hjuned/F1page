@@ -74,7 +74,12 @@ document.addEventListener('DOMContentLoaded', async function (){
 
     if (currentPage === 'resultsPage') {
         document.getElementById('loadingScreen').style.display = 'flex';
+        
+
         await createResultsPage();
+        setTimeout(function() {
+            console.log("Delayed code executed!");
+        }, 2000);
         document.getElementById('loadingScreen').style.display = 'none';
     }
  
