@@ -13,7 +13,7 @@ export async function fetchData(url){
 
 // API for Race Schedule
 export async function getScheduleData() {
-        return await fetchData('https://ergast.com/api/f1/current.json');
+        return await fetchData('https://ergast.com/api/f1/2023.json');
 }
 
 export async function getResultData() {
