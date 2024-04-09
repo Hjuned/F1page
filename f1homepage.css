@@ -95,11 +95,6 @@ a:hover {
 /* Media query for smaller screens */
 /* Media query for smaller screens */
 @media (max-width: 768px) {
-    body {
-        background-image: url('./Logo&Background/f1testbackground-5R7t-IoJD-transformed.webp');
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
     .navbar-nav {
         flex-direction: column; /* Stack items vertically on smaller screens */
     }
