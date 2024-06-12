@@ -1,17 +1,76 @@
-/* Container for content */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto:wght@100&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto:wght@100&family=Titillium+Web&display=swap');
-*{
+* {
   font-family: 'Poppins', sans-serif;
   font-family: 'Roboto', sans-serif;
   font-family: 'Titillium Web', sans-serif;
 }
+
 body {
   background-image: url('./Logo&Background/f1testbackground-5R7t-IoJD-transformed.webp');
   background-size: cover;
   background-repeat: no-repeat;
 }
-#loadingGif{
+
+/* Navbar styles */
+#logo {
+  width: 10%;
+  max-height: 60px; /* Adjust height if necessary */
+  margin-right: 20px;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: transparent;
+}
+
+.navbar-nav {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.headliner {
+  background-color: #333333cf;
+  border-radius: 20px;
+  font-weight: bolder;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.logoheadliner {
+  padding-right: 10%;
+  border-right: 2px solid rgba(255, 255, 255, 0.389);
+}
+
+.nav-item {
+  margin: 0 10px;
+}
+
+.nav-link {
+  border-radius: 10px;
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+  font-weight: bold;
+}
+a:hover {
+  background-color: #555555;
+
+}
+a {
+  border-radius: 10px;
+}
+
+
+/* Additional styles if necessary */
+#loadingGif {
   width: 200px;
   height: 200px;
 }
@@ -32,14 +91,14 @@ body {
 }
 
 #raceList {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap; /* Allow multiple rows */
-    justify-content: space-between; /* Distribute items evenly */
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap; /* Allow multiple rows */
+  justify-content: space-between; /* Distribute items evenly */
 }
-  
-  /* Styling for each race card */
+
+/* Styling for each race card */
 .raceScheduleCard {
   display: flex;
   flex-direction: column;
@@ -54,36 +113,37 @@ body {
   background-color: #333333cf;
   transition: transform 0.5s ease;
 }
+
 .raceScheduleCard:hover {
   transform: scale(1.05);
 }
-  
-  /* Race name styling */
+
+/* Race name styling */
 h1 {
   font-size: 20px;
   margin-bottom: 5px;
   color: white;
 }
-  
-  /* Round number styling */
+
+/* Round number styling */
 p {
   font-size: 16px;
   color: rgba(255, 255, 255, 0.725);
   margin-bottom: 15px;
 }
-  
-  /* Responsive design for smaller screens */
+
+/* Responsive design for smaller screens */
 @media (max-width: 768px) {
   .raceCard {
     width: 100%; /* Full width on smaller screens */
   }
-  
+
   h1, p {
     font-size: 16px;
   }
 }
 
 img {
-    margin-left: auto;
-    width: 20%;
+  margin-left: auto;
+  width: 20%;
 }
