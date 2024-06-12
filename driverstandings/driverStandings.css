@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto:wght@100&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto:wght@100&family=Titillium+Web:ital,wght@1,700&display=swap');
 *{
     font-family: 'Poppins', sans-serif;
@@ -6,7 +5,7 @@
     font-family: 'Titillium Web', sans-serif;
 }
 body {
-    background-image: url('./Logo&Background/f1testbackground-5R7t-IoJD-transformed.webp');
+    background-image: url('../Logo&Background/f1testbackground-5R7t-IoJD-transformed.webp');
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -21,7 +20,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('./Logo&Background/f1testbackground-5R7t-IoJD-transformed.webp');
+    background-image: url('../Logo&Background/f1testbackground-5R7t-IoJD-transformed.webp');
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
@@ -30,44 +29,44 @@ body {
     z-index: 1000; /* Ensure it's above other elements */
   }
   
-#constructorStandingsList {
+#driverStandingsList {
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap; /* Allow multiple rows */
     justify-content: space-between; /* Distribute items evenly */
-}
-.raceConstructorStandingsCard {
+  }
+.raceDriverStandingsCard {
     display: flex;
     flex-direction: column;
     background-color: #333333cf;
     border: 1px solid #ccc;
     padding: 15px;
-    margin: 20px 0;
+    margin: 8px 0;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     width: 30%;
     transition: transform 0.5s ease;
 }
-.raceConstructorStandingsCard:hover {
+.raceDriverStandingsCard:hover {
     transform: scale(1.05);
 }
 
 h1 {
-    color: rgba(255, 255, 255, 0.918);
+    color: rgba(255, 255, 255, 0.929);
     font-size: 20px;
     margin-bottom: 10px;
 }
 
 p {
-    color: rgba(255, 255, 255, 0.753);
+    color: rgba(255, 255, 255, 0.794);
     font-size: 16px;
     margin: 5px 0;
 }
 
 /* Responsive design for smaller screens */
 @media (max-width: 768px) {
-    .raceConstructorStandingsCard {
+    .raceDriverStandingsCard {
         width: 100%;
         margin: 10px 0; /* Adjust margin for better spacing on smaller screens */
     }
@@ -79,12 +78,12 @@ p {
     }
 
     img {
-        width: 80%; /* Set a specific width for the images on smaller screens */
-        margin-left: auto;
-        margin-right: auto; /* Center the images */
+        width: 100%; /* Make images full width on smaller screens */
+        margin-left: 0; /* Reset left margin */
     }
 }
-img {
+
+  img {
     margin-left: auto;
     width: 45%;
 }

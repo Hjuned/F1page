@@ -7,7 +7,7 @@
   font-family: 'Titillium Web', sans-serif;
 }
 body {
-  background-image: url('./Logo&Background/f1testbackground-5R7t-IoJD-transformed.webp');
+  background-image: url('../Logo&Background/f1testbackground-5R7t-IoJD-transformed.webp');
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -22,7 +22,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url('./Logo&Background/f1testbackground-5R7t-IoJD-transformed.webp');
+  background-image: url('../Logo&Background/f1testbackground-5R7t-IoJD-transformed.webp');
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
