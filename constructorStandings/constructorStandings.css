@@ -21,7 +21,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('./Logo&Background/f1testbackground-5R7t-IoJD-transformed.webp');
+    background-image: url('../Logo&Background/f1testbackground-5R7t-IoJD-transformed.webp');
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
@@ -37,6 +37,77 @@ body {
     flex-wrap: wrap; /* Allow multiple rows */
     justify-content: space-between; /* Distribute items evenly */
 }
+
+  /* Navbar styles */
+  #logo {
+    width: 10%;
+    max-height: 60px; /* Adjust height if necessary */
+    margin-right: 20px;
+  }
+  
+  .navbar {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: transparent;
+    height: 80px; /* Set explicit height for navbar */
+  }
+  
+  .headliner {
+    background-color: #333333cf;
+    border-radius: 20px;
+    font-weight: bolder;
+    display: flex;
+    align-items: center; /* Align items vertically */
+    width: 100%;
+    justify-content: space-between;
+    padding: 5px 20px; /* Add padding for more height */
+  }
+  
+  .logoheadliner {
+    padding-right: 10%;
+    border-right: 2px solid rgba(255, 255, 255, 0.389);
+    color: white;
+    text-decoration: none;
+    white-space: nowrap; /* Ensure text does not wrap */
+    font-size: 1.5em; /* Adjust font size if necessary */
+  }
+  
+  .navbar-nav {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    justify-content: space-around;
+    width: 100%;
+  }
+  
+  .nav-item {
+    margin: 0 10px;
+  }
+  
+  .nav-link {
+    border-radius: 10px;
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-weight: bold;
+    font-size: 1.1em; /* Adjust font size if necessary */
+  }
+  
+  .nav-link:hover, .nav-link.active {
+    background-color: #555555;
+    border-radius: 10px;
+  }
+  
+  a {
+    border-radius: 10px;
+  }
+  
+  a:hover {
+    background-color: #555555;
+  }
+
 .raceConstructorStandingsCard {
     display: flex;
     flex-direction: column;
